@@ -5,20 +5,13 @@ the [Jackson HAL module](https://github.com/Nykredit/jackson-dataformat-hal) is
 being used for generating [HAL JSON](http://tools.ietf.org/html/draft-kelly-json-hal)
 output.
 
-# Status
-
-Module is considered production ready.
-
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/dk.nykredit.swagger/swagger-hal/badge.svg)](https://maven-badges.herokuapp.com/maven-central/dk.nykredit.swagger/swagger-hal/)
-[![Javadoc](https://javadoc-emblem.rhcloud.com/doc/dk.nykredit.swagger/swagger-hal/badge.svg)](https://www.javadoc.io/doc/dk.nykredit.swagger/swagger-hal)
-
 # Usage
 
 The Swagger module will be automatically discovered by Swagger when present in the classpath.
 
 ## Caveat: Using the Swagger Maven Plugin
 
-Note: Using the [Nykredit Swagger Maven plugin](https://github.com/Nykredit/swagger-maven-plugin) will also solve this issue.
+Note: Using the Nykredit Swagger Maven plugin will also solve this issue.
 
 The Swagger Maven Plugin manipulates the extensions of Swagger and does not
 call upwards in the ModelConverter chain. Therefor it is necessary to configure
